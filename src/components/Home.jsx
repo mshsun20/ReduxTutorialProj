@@ -26,7 +26,7 @@ const Home = () => {
     const api = `https://api-in21.leadsquared.com/v2/LeadManagement.svc/RetrieveLeadByPhoneNumber?accessKey=u$r80dceccd180f2da9118ae76188aa80af&secretKey=3597246096083d1d798c1d133356f107a751106c&phone=${phn}`
     const res = await axios.get(api)
     const data = await res.data[0]
-    console.log(data)
+    // console.log(data)
   }
   
   useEffect(() => {
