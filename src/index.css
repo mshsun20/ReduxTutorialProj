@@ -1,0 +1,41 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+
+  --light-bg: #dbfdef;
+  --dark-bg: #000d07;
+  --col: #0aa969;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  /* background-color: #582734; */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+
+
+@media (width > 768px) {
+  :root {
+    color: var(--col);
+    background-color: var(--light-bg);
+  }
+}
+@media (width <= 768px) {
+  :root {
+    color: var(--col);
+    background-color: var(--dark-bg);
+  }
+}
